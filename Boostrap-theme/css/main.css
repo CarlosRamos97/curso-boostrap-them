@@ -1,3 +1,10 @@
 body{
     font-family: 'Titillium Web', sans-serif;
 }
+
+#testimonial {
+    background: #f1f1f1;
+    padding: 50px 0 30px 0; /*ar,de,ab,iz*/
+    text-align: center;
+    margin-top: 40px; /*margen superior*/
+}
