@@ -19,8 +19,8 @@
 
 <body>
 
-    <!-- NAIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <!-- Para que esté mas ordenado con el div container -->
             <a class="navbar-brand" href="#">Boostrap WebSite</a>
@@ -34,10 +34,10 @@
                         <a class="nav-link" href="#header">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#info-one">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,24 +47,29 @@
     <!-- HEADER -->
     <header id="header">
         <div class="container mt-5">
+            <!--margen arriba de 5-->
             <div class="row">
+                <!--filas-->
                 <div class="col-md-6">
+                    <!-- filas de 6-->
                     <div class="header-content-left">
                         <!--contenido izquierdo-->
-                        <img src="/Boostrap-theme/img/image1.png" style="width: 100%" ;>
+                        <img src="/Boostrap-theme/img/image1.png" style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="header-content-rigth">
+                    <!-- filas de 6-->
+                    <div class="header-content-right">
                         <!--contenido derecho-->
                         <h1 class="display-4">Lorem, ipsum dolor.</h1> <!-- mt-5 margen hacia arriba-->
-                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptate, vitae
-                            quod nam quidem
-                            non voluptatem pariatur reiciendis expedita earum, porro quaerat delectus modi assumenda
-                            eaque ipsum, rerum natus reprehenderit!</p>
-                        <a href="#" class="btn btn-outline-secondary btn-lg">Read More</a>
+                        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro reiciendis
+                            laboriosam sit voluptatem
+                            tempora temporibus amet reprehenderit dignissimos exercitationem incidunt, assumenda
+                            repellendus,
+                            pariatur, nesciunt accusamus vel! Ex minima sit voluptatem.</p>
+                        <!--boton de boostrap-->
+                        <a href="#" class="btn btn-outline-secondary btn-lg header-btn">Read More</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -79,14 +84,89 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque mollitia quia voluptas fuga beatae
                 distinctio adipisci architecto illo voluptate quidem harum iste ratione corporis aliquam laboriosam
                 voluptatum voluptatibus, dolor facilis!
-            </p>
-            <p class="h4"> - Ryan Ray </p>
-            <!--tamaño de letra-->
+                <p>
+                </p>
+                <p class="h4"> - Ryan Ray </p>
+                <!--tamaño de letra-->
         </div>
     </section>
 
-    <!-- INFO ONE -->
+    <!-- INFORMACION UNO / INFO ONE -->
+    <section id="info-one">
+        <div class="container">
+            <!--filas de margen arriba de 5-->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <!--info izquierdo-->
+                    <div class="info-left">
+                        <img src="/Boostrap-theme/img/image2.png" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <!-- la margen de y sea automatico-->
+                    <div class="info-rigth">
+                        <!--info derecho-->
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quod fuga repellendus quia rerum
+                            facere placeat perferendis omnis nisi ducimus unde odio architecto distinctio id accusamus
+                            sequi reiciendis, laboriosam iusto.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid neque aperiam labore
+                            accusamus numquam eaque officiis, totam, odit quae cum ab quia, minima rem ea provident
+                            cumque eius laboriosam distinctio!</p>
+                        <!--boton de boostrap-->
+                        <a href="#" class="btn btn-outline-secondary btn-lg">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- INFORMACION DOS - INFO TWO-->
+    <section id="info-two">
+        <div class="container">
+            <!--margen hacia arriba y abajo de 5-->
+            <div class="row my-5">
+                <!--agregamos 2 columnas de 6-->
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cupiditate numquam eaque esse
+                        error molestias soluta minus ratione est, veritatis iure nihil magnam maiores voluptatem ex
+                        quasi rem a ad.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cupiditate numquam eaque esse
+                        error molestias soluta minus ratione est, veritatis iure nihil magnam maiores voluptatem ex
+                        quasi rem a ad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer / formulario-->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="card my-5">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="10" cols="30" placeholder="Message" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary btn-block">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </footer>
 
 
 
@@ -100,6 +180,46 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- SCROOLL REVEAL SCRIPT -->
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,  //duracion
+            origin: 'bottom' // de abajo
+        });
+        sr.reveal('.header-content-left', {
+            duration: 2000,
+            origin: 'top',    //de  arriba
+            distance: '300px' //distancia
+        });
+        sr.reveal('.header-content-right', {
+            duration: 2000,
+            origin: 'right',  //derecha
+            distance: '300px' //distancia
+        });
+        sr.reveal('.header-btn', {
+            duration: 2000,   //duracion
+            delay: 1000,     //retraso de 1 seg
+            origin: 'bottom' //origne
+        });
+        sr.reveal('#testimonial div', {
+            duration: 2000,  //duracion
+            origin: 'left',  // origen
+            distance: '300px', //distancia
+            viewFactor: 0.2  //visor
+        });
+
+        // Smooth Scrolling - Stack Overflow
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
